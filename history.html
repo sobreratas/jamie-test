@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8efc22d7af.js" crossorigin="anonymous"></script>
+    <script src="app.js" defer></script>
+    <title>Jamie Drake Art - History</title>
+</head>
+
+<body>
+    <main>
+        <div id="header" class="header-1">
+            <div class="container">
+                <nav>
+                    <a href="index.html" class="home-logo">
+                        <h1>Jamie Drake Art</h1>
+                    </a>
+                    <ul id="sidemenu">
+                        <li><a href="index.html" onclick="closemenu()">Home</a></li>
+                        <li><a href="history.html" onclick="closemenu()">History</a></li>
+                        <li><a href="music.html" onclick="closemenu()">Music</a></li>
+                        <li><a href="the-murmurations.html" onclick="closemenu()">The Murmurations</a></li>
+                        <li><a href="fiction.html" onclick="closemenu()">Fiction</a></li>
+                        <li><a href="verse.html" onclick="closemenu()">Verse</a></li>
+                        <li><a href="links.html" onclick="closemenu()">Links</a></li>
+                        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+            </div>
+        </div>
+        <div class="history-container">
+            <h1>History</h1>
+        </div>
+
+        <!-- About -->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1 left-card">
+                        <img src="images/history.webp">
+                    </div>
+                    <div class="about-col-2 right-card">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A cupiditate illum mollitia suscipit
+                            esse nihil. Ullam at tenetur beatae mollitia in repellendus expedita. Eos, id modi quod sit
+                            labore numquam laborum eaque ab possimus quaerat dolore, expedita incidunt harum voluptatem!
+                            Corporis dolorem ducimus ullam, officiis totam maiores commodi minus amet eveniet sed sequi
+                            sit iste reiciendis nulla dolore? Distinctio, in rerum eos eum sapiente autem officiis
+                            omnis? Necessitatibus dolorem odio amet minima pariatur autem, ab, unde ratione vel neque
+                            optio et asperiores natus, hic corrupti delectus rem at incidunt. Delectus illo blanditiis
+                            sint sunt assumenda pariatur fugiat eos nulla perspiciatis.
+                        </p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('early-days')">Early Days</p>
+                            <p class="tab-links" onclick="opentab('first-efforts')">First Efforts</p>
+                            <p class="tab-links" onclick="opentab('the-muse')">The Muse</p>
+                            <p class="tab-links" onclick="opentab('onwards')">Onwards</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="early-days">
+                            <p>Early days text: Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci magnam ipsum nostrum
+                                nemo facere maxime modi rem velit est repudiandae dolores non explicabo dicta voluptatem
+                                illum in voluptatum pariatur perspiciatis illo animi nihil, voluptates dolorem? Totam
+                                sapiente consequuntur optio cumque non id deserunt cupiditate provident, vel earum
+                                aliquid incidunt mollitia!</p>
+                        </div>
+                        <div class="tab-contents" id="first-efforts">
+                            <p>First efforts text: Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
+                                inventore blanditiis facilis eveniet commodi illum sunt beatae possimus cumque quasi
+                                praesentium, sint, cupiditate necessitatibus voluptas recusandae explicabo placeat quod
+                                odit!</p>
+                        </div>
+                        <div class="tab-contents" id="the-muse">
+                            <p>The Muse: Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
+                                inventore blanditiis facilis eveniet commodi illum sunt beatae possimus cumque quasi
+                                praesentium, sint, cupiditate necessitatibus voluptas recusandae explicabo placeat quod
+                                odit!</p>
+                        </div>
+                        <div class="tab-contents" id="onwards">
+                            <p>Onwards: Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
+                                inventore blanditiis facilis eveniet commodi illum sunt beatae possimus cumque quasi
+                                praesentium, sint, cupiditate necessitatibus voluptas recusandae explicabo placeat quod
+                                odit!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <a href="#" class="go-top-btn"><i class="fa-solid fa-arrow-up"></i></a>
+        <!-- Contact -->
+        <div class="copyright">
+            <p>&#169; Copyright Jamie Drake <span class="year"></span>. All rights reserved.</p>
+        </div>
+        </div>
+    </main>
+</body>
+
+</html>

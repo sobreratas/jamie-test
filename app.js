@@ -102,39 +102,39 @@ function opentab(tabname) {
 
 
 //GO TO TOP BUTTON FUNCTIONALITY AND DARK MODE STYLES
-const sidemenu = document.getElementById("sidemenu");
+// const sidemenu = document.getElementById("sidemenu");
 const goTopBtn = document.querySelector(".go-top-btn")
-let toggleBtn = document.querySelector(".toggle-btn");
-let btnIcon = document.getElementById("btnIcon");
-const softwareDevText = document.querySelector(".software-dev");
-const arrowUp = document.querySelector(".fa-arrow-up");
-const lightDarkLi = document.querySelector(".light-dark");
-const themeBtn = document.querySelector(".theme-btn")
-const w = document.documentElement.clientWidth
+// let toggleBtn = document.querySelector(".toggle-btn");
+// let btnIcon = document.getElementById("btnIcon");
+// const softwareDevText = document.querySelector(".software-dev");
+// const arrowUp = document.querySelector(".fa-arrow-up");
+// const lightDarkLi = document.querySelector(".light-dark");
+// const themeBtn = document.querySelector(".theme-btn")
+// const w = document.documentElement.clientWidth
 
-themeBtn.onclick = function () {
-    document.body.classList.toggle("light-mode");
+// themeBtn.onclick = function () {
+//     document.body.classList.toggle("light-mode");
 
-    if (document.body.classList.contains("light-mode")) {
-        toggleBtn.classList = "fa-regular fa-moon toggle-btn";
-        sidemenu.style.right = "-200px";
-        goTopBtn.style.visibility = "visible";
-        arrowUp.style.color = "white";
-        lightDarkLi.innerText = "Dark"
-        themeBtn.style.border = "1px solid black"
-    } else {
-        toggleBtn.classList = "fa-regular fa-sun toggle-btn";
-        sidemenu.style.right = "-200px";
-        goTopBtn.style.visibility = "visible";
-        arrowUp.style.color = "black";
-        lightDarkLi.innerText = "Light"
-        themeBtn.style.border = "1px solid white"
-        softwareDevText.style.color = "#fff";  
-    }
-}
+//     if (document.body.classList.contains("light-mode")) {
+//         toggleBtn.classList = "fa-regular fa-moon toggle-btn";
+//         sidemenu.style.right = "-200px";
+//         goTopBtn.style.visibility = "visible";
+//         arrowUp.style.color = "white";
+//         lightDarkLi.innerText = "Dark"
+//         themeBtn.style.border = "1px solid black"
+//     } else {
+//         toggleBtn.classList = "fa-regular fa-sun toggle-btn";
+//         sidemenu.style.right = "-200px";
+//         goTopBtn.style.visibility = "visible";
+//         arrowUp.style.color = "black";
+//         lightDarkLi.innerText = "Light"
+//         themeBtn.style.border = "1px solid white"
+//         softwareDevText.style.color = "#fff";  
+//     }
+// }
 
 function openmenu() {
-    sidemenu.style.right = "0";
+    sidemenu.style.right = "0px";
     goTopBtn.style.visibility = "hidden"
 
 }
