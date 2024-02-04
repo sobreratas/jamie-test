@@ -218,6 +218,18 @@ nav ul li a:hover::after {
     gap: 20px;
 }
 
+/* Fiction */
+.fiction-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.fiction-container img {
+    width: 80%;
+}
+
 
 /* About */
 
