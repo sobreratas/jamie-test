@@ -194,6 +194,10 @@ nav ul li a:hover::after {
     flex-direction: column;
     align-items: center;
 }
+
+.band-member-card:hover {
+    filter: brightness(85%);
+}
 .band-member-card img {
     width: 300px;
     margin-bottom: 10px;
