@@ -76,18 +76,8 @@ nav {
 .logo {
     margin-top: 20px;
     width: 80px;
-    animation: rotation 30s infinite linear;
 }
 
-@keyframes rotation {
-    from {
-        transform: rotate(0deg);
-    }
-
-    to {
-        transform: rotate(359deg);
-    }
-}
 
 nav ul li {
     display: inline-block;
@@ -178,6 +168,52 @@ nav ul li a:hover::after {
     font-size: 22px;
     z-index: 20;
 }
+
+/* The Murmurations */
+.band-info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+}
+
+.band-member-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.band-member-card {
+    background-color: var(--main-color);
+    padding: 10px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.band-member-card img {
+    width: 300px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+.band-member-card p {
+    margin-top: 8px;
+    font-size: 1.3rem;
+}
+
+.music-container {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
 
 /* About */
 
@@ -656,5 +692,9 @@ nav .fa-solid {
         margin-top: 10px;
         font-size: 16px;
 
+    }
+
+    iframe {
+        width: 300px;
     }
 }
