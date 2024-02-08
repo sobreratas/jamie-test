@@ -81,6 +81,8 @@ body {
     background-image: url(images/jamie-selection.png);
     background-size: cover;
     background-position: center;
+    position: relative;
+    left: 0;
 }
 
 
@@ -120,7 +122,7 @@ nav ul li a:hover {
     background-color: var(--main-color);
     border-radius: 6px;
     transition: .3s ease-in-out;
-    
+    color: #fff;
 }
 
 .fa-bars:hover {
@@ -162,6 +164,18 @@ nav ul li a:hover {
     font-size: 22px;
     z-index: 20;
 }
+
+.go-top-btn:hover > i{
+    transition: .3s ease-in-out;
+    color: #fff;
+}
+
+.fa-xmark:hover {
+    transition: .3s ease-in-out;
+    color: rgb(255, 54, 54);
+}
+
+
 
 /* The Murmurations */
 .band-info-container {
