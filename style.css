@@ -279,7 +279,7 @@ nav ul li a:hover {
   margin: 30px;
 }
 
-.fiction-container img {
+.book-cover {
   width: 80%;
 }
 
@@ -310,9 +310,38 @@ flex-wrap: wrap;
   box-shadow:8px 10px 16px 0 rgba(0,0,0,.2)
 }
 
+.fiction-box-container-row-1-col-1 img:hover {
+  box-shadow:8px 10px 16px 0 rgba(0,0,0,.4)
+}
+
 .fiction-box-container-row-1-col-2 {
   flex-basis: 66%;
   line-height: 1.5;
+}
+
+.fiction-btns-container {
+  margin-top: 25px;
+  display: flex;
+  gap: 10px;
+}
+
+.fiction-btns-container img {
+  width: 160px;
+  height: 80px;
+}
+
+.fiction-btn {
+display: block;
+border: 1px solid rgb(0, 0, 0);
+padding: 10px;
+border-radius: 12px;
+}
+
+.fiction-btn:hover {
+  cursor: pointer;
+  filter: brightness(85%);
+  background-color: #e0e0e0;
+  transition: .2s ease-in-out;
 }
 
 /* Links */
