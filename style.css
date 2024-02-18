@@ -16,7 +16,8 @@
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   height: 100%;
   margin: 0;
   padding: 0;
@@ -26,8 +27,6 @@ main {
   position: relative;
   min-height: 100%;
 }
-
-
 
 /*** ANIMATE CLASSES ***/
 
@@ -186,15 +185,16 @@ nav ul li a:hover {
 
 /* The Murmurations */
 #murm-body {
-  background-image: url('images/murm-website-background.png');
+  background-image: url("images/murm-website-background-2.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-position: center;
   background-color: rgba(255, 255, 255, 0.5);
 }
 .band-logo {
-    width: 40%;
-    margin: 50px 0;
+  width: 40%;
+  margin: 50px 0;
 }
 .murm-container {
   width: 70%;
@@ -263,6 +263,7 @@ nav ul li a:hover {
 .band-member-card:hover {
   filter: brightness(85%);
 }
+
 .band-member-card img {
   width: 300px;
   margin-bottom: 10px;
@@ -284,6 +285,15 @@ nav ul li a:hover {
 }
 
 /* Fiction */
+#fiction-body {
+  background-image: url("images/fiction-website-background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
 .fiction-header-text {
   width: 70%;
   margin-bottom: 30px;
@@ -313,12 +323,11 @@ nav ul li a:hover {
 }
 
 .fiction-box-container-row-1 {
-display: flex;
-justify-content: space-between;
-padding: 10px 10%;
-flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 10%;
+  flex-wrap: wrap;
 }
-
 
 .fiction-box-container-row-1-col-1 {
   display: flex;
@@ -328,14 +337,13 @@ flex-wrap: wrap;
 }
 
 .fiction-box-container-row-1-col-1 img {
-  box-shadow:8px 10px 16px 0 rgba(0,0,0,.2)
+  box-shadow: 8px 10px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 .fiction-box-container-row-1-col-1 img:hover {
-  box-shadow:8px 10px 16px 0 rgba(0,0,0,.4);
+  box-shadow: 8px 10px 16px 0 rgba(0, 0, 0, 0.4);
   filter: brightness(85%);
-  transition: .3s ease-in-out;
-  
+  transition: 0.3s ease-in-out;
 }
 
 .fiction-box-container-row-1-col-2 {
@@ -355,17 +363,17 @@ flex-wrap: wrap;
 }
 
 .fiction-btn {
-display: block;
-border: 1px solid rgb(0, 0, 0);
-padding: 10px;
-border-radius: 12px;
+  display: block;
+  border: 0.5px solid rgb(0, 0, 0);
+  padding: 10px;
+  border-radius: 12px;
 }
 
 .fiction-btn:hover {
   cursor: pointer;
   filter: brightness(85%);
   background-color: #e0e0e0;
-  transition: .2s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 
 /* Links */
@@ -410,10 +418,11 @@ border-radius: 12px;
 
 /* History */
 #history-body {
-  background-image: url('images/history-website-background.png');
+  background-image: url("images/history-website-background-2.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-position: center;
   background-color: rgba(255, 255, 255, 0.5);
 }
 
@@ -739,8 +748,6 @@ form .btn2 {
   margin-top: 20px;
 }
 
-
-
 /* Card Observer Styles */
 .card {
   transform: translateY(100px);
@@ -890,15 +897,19 @@ nav .fa-solid {
   .fiction-box-container-row-1-col-1 {
     flex-basis: 100%;
   }
-  
+
   .fiction-box-container-row-1-col-2 {
     flex-basis: 100%;
   }
 
-  .fiction-box-container-row-1-col-1 img{
+  .fiction-box-container-row-1-col-1 img {
     width: 70%;
   }
 
+  .band-logo {
+    width: 70%;
+    margin: 30px 0;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -918,5 +929,17 @@ nav .fa-solid {
 
   iframe {
     width: 300px;
+  }
+
+  #murm-body {
+    background-image: url("images/murm-website-background-mobile.png");
+  }
+
+  #fiction-body {
+    background-image: url("images/fiction-website-background-mobile.png");
+  }
+
+  #history-body {
+    background-image: url("images/history-website-background-mobile.png");
   }
 }
