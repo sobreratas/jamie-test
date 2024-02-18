@@ -172,8 +172,16 @@ nav ul li a:hover {
 }
 
 /* The Murmurations */
+#murm-body {
+  background-image: url('images/murm-website-background.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: rgba(255, 255, 255, 0.5);
+}
 .band-logo {
     width: 40%;
+    margin: 50px 0;
 }
 .murm-container {
   width: 70%;
@@ -311,7 +319,10 @@ flex-wrap: wrap;
 }
 
 .fiction-box-container-row-1-col-1 img:hover {
-  box-shadow:8px 10px 16px 0 rgba(0,0,0,.4)
+  box-shadow:8px 10px 16px 0 rgba(0,0,0,.4);
+  filter: brightness(85%);
+  transition: .3s ease-in-out;
+  
 }
 
 .fiction-box-container-row-1-col-2 {
