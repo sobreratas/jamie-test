@@ -157,4 +157,4 @@ const headerText = document.querySelector(".header-text");
 window.addEventListener('scroll', ()=> {
     let value = window.scrollY;
     headerText.style.left = value * -2 + 'px';
-})
+});

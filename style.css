@@ -185,6 +185,7 @@ nav ul li a:hover {
 
 /* The Murmurations */
 #murm-body {
+  position: relative;
   background-image: url("images/murm-website-background-2.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -192,6 +193,7 @@ nav ul li a:hover {
   background-position: center;
   background-color: rgba(255, 255, 255, 0.5);
 }
+
 .band-logo {
   width: 40%;
   margin: 50px 0;
@@ -358,14 +360,12 @@ nav ul li a:hover {
 }
 
 .fiction-btns-container img {
-  width: 160px;
-  height: 80px;
+  width: 150px;
 }
 
 .fiction-btn {
   display: block;
   border: 0.5px solid rgb(0, 0, 0);
-  padding: 10px;
   border-radius: 12px;
 }
 
@@ -376,19 +376,16 @@ nav ul li a:hover {
   transition: 0.2s ease-in-out;
 }
 
-/* Links */
-.links-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-}
-
-.links-container h1 {
-  margin: 30px;
-}
-
 /* Music */
+#music-body {
+  background-image: url("images/music-website-background-2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  transition: 20s;
+}
 .music-container {
   display: flex;
   flex-direction: column;
@@ -424,6 +421,25 @@ nav ul li a:hover {
   background-attachment: fixed;
   background-position: center;
   background-color: rgba(255, 255, 255, 0.5);
+  transition: 20s;
+
+  animation-name: animate;
+  animation-direction: alternate-reverse;
+  animation-duration: 10s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes animate {
+  0% {
+    background-image: url("images/history-website-background-2.png");
+  }
+
+  50% {
+    background-image: url("images/history-website-background-3.png");
+  }
 }
 
 .history-container {
@@ -696,6 +712,10 @@ nav ul li a:hover {
   margin-top: 30px;
 }
 
+.social-icons.footer {
+  margin: 10px;
+}
+
 .social-icons a {
   text-decoration: none;
   font-size: 30px;
@@ -742,10 +762,15 @@ form .btn2 {
 .copyright {
   width: 100%;
   text-align: center;
-  padding: 25px 0;
+  padding: 10px 0;
   background: var(--secondary-color);
   font-weight: 300;
-  margin-top: 20px;
+  margin-top: 30px;
+}
+
+.credit {
+  margin-top: 12px;
+  font-size: 0.8rem;
 }
 
 /* Card Observer Styles */
@@ -877,6 +902,10 @@ nav .fa-solid {
 
   .copyright {
     font-size: 14px;
+  }
+
+  .credit {
+    font-size: 0.7rem;
   }
 
   .theme-btn {
