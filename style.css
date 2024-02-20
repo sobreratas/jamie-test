@@ -1117,16 +1117,11 @@ text-align: center;
     width: 300px;
   }
 
-  #murm-body {
-    background-image: url("images/murm-website-background-mobile.png");
-  }
-
-  #fiction-body {
-    background-image: url("images/fiction-website-background-mobile.png");
-  }
-
-  #history-body {
-    background-image: url("images/history-website-background-mobile.png");
+  #murm-body,
+  #fiction-body,
+  #history-body,
+  #music-body {
+    background-image: none;
   }
 
   .fiction-box-container-row-1-col-1 {
