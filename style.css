@@ -286,6 +286,89 @@ nav ul li a:hover {
   gap: 20px;
 }
 
+/* Carousel */
+.carousel-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.slide-container {
+  display: flex;
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+
+}
+
+.btns {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4px;
+  margin: 0 5px;
+}
+
+.btns button {
+  color: none;
+  background-color: rgb(203, 203, 203);
+  opacity: 80%;
+  border: none;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  transition: background .3s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Center horizontally */
+}
+
+.btns button:hover {
+  cursor: pointer;
+  background: #fff;
+}
+
+.indicators {
+  position: absolute;
+  bottom: 4px;
+  right: 0;
+  left: 0;
+}
+
+.indicator-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.indicator {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  width: 7px;
+  height: 7px;
+  background: #fff;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.indicator.active {
+  width: 12px;
+  height: 12px;
+}
+
+.prevBtn.hidden {
+  visibility: hidden;
+}
+
+.nextBtn.hidden {
+  visibility: hidden;
+}
+
 /* Fiction */
 #fiction-body {
   background-image: url("images/fiction-website-background.png");

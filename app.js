@@ -158,3 +158,92 @@ window.addEventListener('scroll', ()=> {
     let value = window.scrollY;
     headerText.style.left = value * -2 + 'px';
 });
+
+const slideContainer = document.querySelector(".slide-container");
+        const indicatorContainer = document.querySelector(".indicator-container");
+
+        const images = [
+            { path: 'images/history-1.jpg' },
+            { path: 'images/history-2.jpg' },
+            { path: 'images/history-3.jpg' },
+            { path: 'images/history-4.jpg' },
+            { path: 'images/history-5.jpg' },
+            { path: 'images/history-6.jpg' },
+
+        ];
+
+        let current = 0;
+
+        window.addEventListener('DOMContentLoaded', () => {
+            let indicatorMap = images.map(image => {
+                return `<div class="indicator"></div>`
+            })
+
+            indicatorContainer.innerHTML = indicatorMap.join('');
+            let imageMap = images.map(image => {
+                return `<img src="${image.path}" alt="">`
+            })
+
+            slideContainer.innerHTML = imageMap.join('');
+
+            const prevBtn = document.getElementById("prevBtn");
+            const nextBtn = document.getElementById("nextBtn");
+            const indicators = document.querySelectorAll(".indicator");
+
+            indicators[0].classList.add("active");
+            prevBtn.classList.add("hidden")
+            const prev = () => {
+                removeActiveFromIndicator();
+                setPrevCurrent();
+            }
+
+            const next = () => {
+                removeActiveFromIndicator();
+                setNextCurrent();
+            }
+
+            function removeActiveFromIndicator() {
+                indicators.forEach(indicator => {
+                    indicator.classList.remove("active");
+                })
+            }
+
+            function setPrevCurrent() {
+                if (current === 0) {
+                    
+                    nextBtn.classList.remove("hidden")
+                    current = images.length - 1;
+                    slideContainer.style.transform = `translateX(-${current * 100}%)`;
+                    indicators[current].classList.add("active");
+                } else {
+                    current -= 1
+                    if(current === 0){
+                        prevBtn.classList.add("hidden")
+                    }
+                    nextBtn.classList.remove("hidden")
+                    slideContainer.style.transform = `translateX(-${current * 100}%)`;
+                    indicators[current].classList.add("active");
+                }
+                console.log(current)
+            }
+
+            function setNextCurrent() {
+                if (current === images.length - 1) {
+                    nextBtn.classList.add("hidden");
+                    current = 0;
+                    slideContainer.style.transform = `translateX(-${current * 100}%)`;
+                    indicators[current].classList.add("active");
+                } else {
+                    current += 1;
+                    if (current === images.length - 1) {
+                        nextBtn.classList.add("hidden"); // Hide next button when on second-to-last image
+                    }
+                    prevBtn.classList.remove("hidden"); // Ensure previous button is visible
+                    slideContainer.style.transform = `translateX(-${current * 100}%)`;
+                    indicators[current].classList.add("active");
+                }
+            }
+
+            prevBtn.addEventListener('click', prev);
+            nextBtn.addEventListener('click', next);
+        });
