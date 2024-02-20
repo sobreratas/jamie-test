@@ -378,13 +378,32 @@ nav ul li a:hover {
 
 /* Music */
 #music-body {
-  background-image: url("images/music-website-background-2.png");
+  background-image: url("images/music-website-background.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
   background-color: rgba(255, 255, 255, 0.5);
+
+  animation-name: animateMusicBackground;
+  animation-direction: alternate-reverse;
+  animation-duration: 10s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+  animation-timing-function: ease-in-out;
 }
+
+@keyframes animateMusicBackground {
+  0% {
+    background-image: url("images/music-website-background.png");
+  }
+
+  50% {
+    background-image: url("images/music-website-background-2.png");
+  }
+}
+
 .music-container {
   display: flex;
   flex-direction: column;
@@ -393,7 +412,53 @@ nav ul li a:hover {
 }
 
 .music-container h1 {
-  margin: 30px;
+  margin-top: 30px;
+}
+
+.music-container p {
+  padding: 20px;
+  line-height: 1.5;
+}
+
+.music-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 50px;
+  gap: 50px;
+}
+
+.music-release {
+  background-color: #e0e0e0;
+  padding: 20px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 12px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.music-release img {
+  width: 250px;
+}
+
+.cd {
+  opacity: .5;
+}
+
+.music-release a {
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 8px;
+  color: #000;
+  background-color: rgb(75, 191, 214);
+}
+
+.music-release a:hover {
+  cursor: pointer;
+  color: #fff;
+  transition: .3s ease-in-out;
 }
 
 /* Verse */
@@ -421,7 +486,7 @@ nav ul li a:hover {
   background-position: center;
   background-color: rgba(255, 255, 255, 0.5);
 
-  animation-name: animate;
+  animation-name: animateHistoryBackground;
   animation-direction: alternate-reverse;
   animation-duration: 10s;
   animation-fill-mode: forwards;
@@ -430,7 +495,7 @@ nav ul li a:hover {
   animation-timing-function: ease-in-out;
 }
 
-@keyframes animate {
+@keyframes animateHistoryBackground {
   0% {
     background-image: url("images/history-website-background-2.png");
   }
