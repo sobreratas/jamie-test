@@ -298,7 +298,10 @@ nav ul li a:hover {
   transition-property: transform;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
+}
 
+.slide-container img {
+  width: 100%;
 }
 
 .btns {
