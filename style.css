@@ -701,119 +701,6 @@ nav ul li a:hover {
   padding-left: 4px;
 }
 
-/* Skills */
-#services {
-  padding: 30px 0;
-}
-
-.skills-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-gap: 40px;
-  margin-top: 50px;
-}
-
-.skills-list div {
-  background: var(--secondary-color);
-  padding: 40px;
-  font-size: 13px;
-  font-weight: 300;
-  border-radius: 10px;
-  transition: background 0.5s, tranform 0.5s;
-}
-
-.skills-list div i {
-  font-size: 50px;
-  margin-bottom: 30px;
-}
-
-.skills-list div h2 {
-  font-size: 30px;
-  font-weight: 500;
-  margin-bottom: 15px;
-}
-
-.skills-list div a {
-  text-decoration: none;
-  color: var(--font-color);
-  font-size: 12px;
-  margin-top: 20px;
-  display: inline-block;
-}
-
-.skills-list div:hover {
-  background-color: var(--main-color);
-  transform: translateY(-10px);
-  box-shadow: 0 10px 18px 0 rgba(0, 234, 255, 0.2),
-    0 16px 20px 0 rgba(0, 204, 255, 0.19);
-  color: #000;
-}
-
-/* Portfolio */
-#portfolio {
-  padding: 50px 0;
-}
-
-.work-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-gap: 40px;
-  margin-top: 50px;
-}
-
-.work {
-  border-radius: 10px;
-  position: relative;
-  overflow: hidden;
-}
-
-.work img {
-  width: 100%;
-  border-radius: 10px;
-  display: block;
-  transition: transform 0.5s;
-}
-
-.work-list a {
-  color: #000;
-}
-
-.layer {
-  width: 100%;
-  height: 0%;
-  background: linear-gradient(rgba(48, 48, 48, 0.5), var(--main-color));
-  border-radius: 10px;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  padding: 0 40px;
-  text-align: center;
-  font-size: 14px;
-  transition: height 0.5s;
-}
-
-.layer h2 {
-  margin-bottom: 20px;
-}
-
-.layer p {
-  font-size: 18px;
-  line-height: 1.5;
-}
-
-.work:hover img {
-  transform: scale(1.1);
-  filter: blur(4px);
-}
-
-.work:hover .layer {
-  height: 100%;
-}
 
 .btn {
   display: block;
@@ -829,6 +716,33 @@ nav ul li a:hover {
 
 .btn:hover {
   background: var(--main-color);
+}
+
+/*** THANKS SECTION STYLES ***/
+.thanks-container {
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.thanks-logo {
+  width: 300px;
+}
+.thanks-btn {
+  background-color: var(--main-color);
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  width: 150px;
+  /* display: block;
+  margin: 0 auto; */
+}
+
+.thanks-btn:hover {
+  cursor: pointer;
+  color: #fff;
+  transition: .3s ease-in-out;
 }
 
 /* Contact */
