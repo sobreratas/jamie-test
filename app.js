@@ -105,7 +105,7 @@ function opentab(tabname) {
 const goTopBtn = document.querySelector(".go-top-btn")
 
 //OPEN SIDE BAR
-function openmenu() {
+function openMenu() {
     sidemenu.style.right = "0px";
     goTopBtn.style.visibility = "hidden"
 
