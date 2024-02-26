@@ -163,12 +163,13 @@ const slideContainer = document.querySelector(".slide-container");
         const indicatorContainer = document.querySelector(".indicator-container");
 
         const images = [
-            { path: 'images/history-1.jpg' },
-            { path: 'images/history-2.jpg' },
-            { path: 'images/history-3.jpg' },
-            { path: 'images/history-4.jpg' },
-            { path: 'images/history-5.jpg' },
-            { path: 'images/history-6.jpg' },
+            { path: 'images/history-7.jpg' },
+            { path: 'images/history-9.jpg' },
+            { path: 'images/history-8.jpg' },
+            { path: 'images/history-11.jpg' },
+            { path: 'images/history-12.jpg' },
+            { path: 'images/history-10.jpg' },
+
 
         ];
 
