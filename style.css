@@ -64,7 +64,7 @@ html {
 }
 
 body {
-  background: var(--body-background-color);
+  background: var(--secondary-color);
   color: var(--font-color);
   /* transition: background 0.5s, color 0.5s;
   animation: transitionIn 0.75s; */
@@ -80,6 +80,10 @@ body {
     transform: translateY(0px);
   }
 } */
+
+.wrapper {
+  background-color: #fff;
+}
 
 .fa-arrow-up {
   color: #000;
