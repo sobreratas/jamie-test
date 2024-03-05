@@ -136,14 +136,13 @@ const slideContainer = document.querySelector(".slide-container");
         const indicatorContainer = document.querySelector(".indicator-container");
 
         const images = [
+            { path: 'images/history-13.jpg' },
             { path: 'images/history-7.jpg' },
             { path: 'images/history-9.jpg' },
             { path: 'images/history-8.jpg' },
             { path: 'images/history-11.jpg' },
             { path: 'images/history-12.jpg' },
             { path: 'images/history-10.jpg' },
-
-
         ];
 
         let current = 0;
