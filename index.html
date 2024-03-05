@@ -12,73 +12,82 @@
 </head>
 
 <body>
-    <div class="wrapper">
-    <div id="header" class="header">
-        <span class="animate bg"></span>
-        <div class="container">
-            <nav>
-                <a href="index.html" class="home-logo">
-                    <h1>Jamie Drake Art</h1>
-                </a>
-                <ul id="sidemenu">
-                    <li><a href="#header" onclick={closeMenu()}>Home</a></li>
-                    <li><a href="history.html" onclick={closeMenu()}>History</a></li>
-                    <li><a href="music.html" onclick={closeMenu()}>Music</a></li>
-                    <li><a href="the-murmurations.html" onclick={closeMenu()}>The Murmurations</a></li>
-                    <li><a href="fiction.html" onclick={closeMenu()}>Fiction</a></li>
-                    <li><a href="verse.html" onclick={closeMenu()}>Verse</a></li>
-                    <i class="fa-solid fa-xmark" onclick={closeMenu()}></i>
+    <main>
+        <div class="wrapper">
+            <div id="header" class="header">
+                <span class="animate bg"></span>
+                <div class="container">
+                    <nav>
+                        <a href="index.html" class="home-logo">
+                            <h1>Jamie Drake Art</h1>
+                        </a>
+                        <ul id="sidemenu">
+                            <li><a href="#header" onclick={closeMenu()}>Home</a></li>
+                            <li><a href="history.html" onclick={closeMenu()}>History</a></li>
+                            <li><a href="music.html" onclick={closeMenu()}>Music</a></li>
+                            <li><a href="the-murmurations.html" onclick={closeMenu()}>The Murmurations</a></li>
+                            <li><a href="fiction.html" onclick={closeMenu()}>Fiction</a></li>
+                            <li><a href="verse.html" onclick={closeMenu()}>Verse</a></li>
+                            <i class="fa-solid fa-xmark" onclick={closeMenu()}></i>
 
-                </ul>
-                <i class="fa-solid fa-bars" onclick="openMenu()"></i>
-                <span class="animate" style="--i:1;"></span>
-            </nav>
-            <div class="header-text">
-                <h1>Jamie Drake Art<span class="animate" style="--i:2;"></span></h1>
-                <p>A site featuring the creative<span class="animate" style="--i:3;"></span></p>
-                <p>output of Jamie Drake.<span class="animate" style="--i:4;"></span></p>
-            </div>
-        </div>
-    </div>
-
-    <a href="#" class="go-top-btn"><i class="fa-solid fa-arrow-up"></i></a>
-    <!-- Contact -->
-    <div id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="contact-left left-card">
-                    <h1 class="sub-title">Contact</h1>
-                    <p><i class="fa-regular fa-paper-plane"></i> Please fill out the form to message me.</p>
-                    <div class="social-icons">
-                        <a href="https://open.spotify.com/artist/7wKJurl3H6c5X0ihRcitk3" target="_blank"><i class="fa-brands fa-spotify"></i></a>
-                        <a href="https://music.apple.com/us/artist/the-murmurations/1181216683" target="_blank"><i class="fa-brands fa-apple"></i></a>
-                        <a href="https://www.youtube.com/@themurmurations1534" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                        </ul>
+                        <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+                        <span class="animate" style="--i:1;"></span>
+                    </nav>
+                    <div class="header-text">
+                        <h1>Jamie Drake Art<span class="animate" style="--i:2;"></span></h1>
+                        <p>A site featuring the creative<span class="animate" style="--i:3;"></span></p>
+                        <p>output of Jamie Drake.<span class="animate" style="--i:4;"></span></p>
                     </div>
                 </div>
-                <div class="contact-right right-card">
-                    <form id="contactForm" action="#form-submit-random-string-url" method="POST">
-                        <input type="text" name="Name" placeholder="Your Name" required>
-                        <input type="text" name="Email" placeholder="Your Email" required>
-                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                        <button type="submit" class="btn btn2">Submit</button>
-                    </form>
-                    <span id="msg"></span>
+            </div>
+
+            <a href="#" class="go-top-btn"><i class="fa-solid fa-arrow-up"></i></a>
+            <!-- Contact -->
+            <div id="contact">
+                <div class="container">
+                    <div class="row">
+                        <div class="contact-left left-card">
+                            <h1 class="sub-title">Contact</h1>
+                            <p><i class="fa-regular fa-paper-plane"></i> Please fill out the form to message me.</p>
+                            <div class="social-icons">
+                                <a href="https://open.spotify.com/artist/7wKJurl3H6c5X0ihRcitk3" target="_blank"><i
+                                        class="fa-brands fa-spotify"></i></a>
+                                <a href="https://music.apple.com/us/artist/the-murmurations/1181216683"
+                                    target="_blank"><i class="fa-brands fa-apple"></i></a>
+                                <a href="https://www.youtube.com/@themurmurations1534" target="_blank"><i
+                                        class="fa-brands fa-youtube"></i></a>
+                            </div>
+                        </div>
+                        <div class="contact-right right-card">
+                            <form id="contactForm" action="#form-submit-random-string-url" method="POST">
+                                <input type="text" name="Name" placeholder="Your Name" required>
+                                <input type="text" name="Email" placeholder="Your Email" required>
+                                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                                <button type="submit" class="btn btn2">Submit</button>
+                            </form>
+                            <span id="msg"></span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</div>
-<footer class="footer">
-    <div class="copyright">
-        <div class="social-icons footer">
-            <a href="https://open.spotify.com/artist/7wKJurl3H6c5X0ihRcitk3" target="_blank"><i class="fa-brands fa-spotify"></i></a>
-            <a href="https://music.apple.com/us/artist/the-murmurations/1181216683" target="_blank"><i class="fa-brands fa-apple"></i></a>
-            <a href="https://www.youtube.com/@themurmurations1534" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+    </main>
+    <footer class="footer">
+        <div class="copyright">
+            <div class="social-icons footer">
+                <a href="https://open.spotify.com/artist/7wKJurl3H6c5X0ihRcitk3" target="_blank"><i
+                        class="fa-brands fa-spotify"></i></a>
+                <a href="https://music.apple.com/us/artist/the-murmurations/1181216683" target="_blank"><i
+                        class="fa-brands fa-apple"></i></a>
+                <a href="https://www.youtube.com/@themurmurations1534" target="_blank"><i
+                        class="fa-brands fa-youtube"></i></a>
+            </div>
+            <p>&#169; Copyright Jamie Drake <span class="year"></span>. All rights reserved.</p>
+            <p class="credit">Website design by <a href="https://chrisratsabout.com/" target="_blank">Chris
+                    Ratsabout</a></p>
         </div>
-        <p>&#169; Copyright Jamie Drake <span class="year"></span>. All rights reserved.</p>
-        <p class="credit">Website design by <a href="https://chrisratsabout.com/" target="_blank">Chris Ratsabout</a></p>
-    </div>
-</footer>
+    </footer>
 </body>
 
 </html>
