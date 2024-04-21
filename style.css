@@ -243,6 +243,7 @@ nav ul li a:hover {
   flex-direction: column;
   align-items: center;
   gap: 14px;
+  padding-bottom: 60px;
 }
 
 .band-info-container h1 {
@@ -251,7 +252,7 @@ nav ul li a:hover {
 
 .band-member-container {
   display: flex;
-  gap: 20px;
+  gap: 30px;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
@@ -379,14 +380,6 @@ nav ul li a:hover {
 }
 
 /* Fiction */
-#fiction-body {
-  background-image: url("images/fiction-website-background.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  background-color: rgba(255, 255, 255, 0.5);
-}
 
 .fiction-header-text {
   width: 70%;
@@ -398,6 +391,7 @@ nav ul li a:hover {
   flex-direction: column;
   align-items: center;
   gap: 20px;
+  padding-bottom: 60px;
 }
 
 .fiction-container h1 {
@@ -572,23 +566,23 @@ nav ul li a:hover {
 
 /* History */
 #history-body {
-  background-image: url("images/history-website-background-2.png");
+  /* background-image: url("images/history-website-background-2.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: center;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-position: center; */
+  background-color: #fff;
 
-  animation-name: animateHistoryBackground;
+  /* animation-name: animateHistoryBackground;
   animation-direction: alternate-reverse;
   animation-duration: 10s;
   animation-fill-mode: forwards;
   animation-iteration-count: infinite;
   animation-play-state: running;
-  animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out; */
 }
 
-@keyframes animateHistoryBackground {
+/* @keyframes animateHistoryBackground {
   0% {
     background-image: url("images/history-website-background-2.png");
   }
@@ -596,7 +590,7 @@ nav ul li a:hover {
   50% {
     background-image: url("images/history-website-background-3.png");
   }
-}
+} */
 
 .history-container {
   display: flex;
